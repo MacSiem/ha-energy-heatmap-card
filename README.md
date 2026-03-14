@@ -1,32 +1,32 @@
-# 🟩 HA Energy Heatmap Card
+# ð© HA Energy Heatmap Card
 
 [![HACS](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://hacs.xyz)
 [![GitHub Release](https://img.shields.io/github/v/release/MacSiem/ha-energy-heatmap-card)](https://github.com/MacSiem/ha-energy-heatmap-card/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A custom Lovelace card for **Home Assistant** that visualizes energy consumption as a heatmap — like GitHub's contribution graph, but for your energy data.
+A custom Lovelace card for **Home Assistant** that visualizes energy consumption as a heatmap â like GitHub's contribution graph, but for your energy data.
 
 ![Energy Heatmap Card Preview](docs/preview.png)
 
-## ✨ Features
+## â¨ Features
 
-- **Hour × Day Heatmap** — See exactly when you consume the most energy
-- **Daily Overview Calendar** — GitHub-style contribution graph for daily totals
-- **Peak Detection** — Automatically identifies your peak consumption times
-- **Smart Stats** — Total consumption, daily average, peak time at a glance
-- **6 Built-in Palettes** — Green, blue, orange, red, purple, yellow
-- **Custom Colors** — Define your own gradient with hex colors
-- **Dark Mode** — Follows your Home Assistant theme automatically
-- **Interactive Tooltips** — Hover over any cell for exact values
-- **Responsive Design** — Works on mobile, tablet, and desktop
-- **HA Native** — Uses HA history API directly, no external dependencies
+- **Hour Ã Day Heatmap** â See exactly when you consume the most energy
+- **Daily Overview Calendar** â GitHub-style contribution graph for daily totals
+- **Peak Detection** â Automatically identifies your peak consumption times
+- **Smart Stats** â Total consumption, daily average, peak time at a glance
+- **6 Built-in Palettes** â Green, blue, orange, red, purple, yellow
+- **Custom Colors** â Define your own gradient with hex colors
+- **Dark Mode** â Follows your Home Assistant theme automatically
+- **Interactive Tooltips** â Hover over any cell for exact values
+- **Responsive Design** â Works on mobile, tablet, and desktop
+- **HA Native** â Uses HA history API directly, no external dependencies
 
-## 📦 Installation
+## ð¦ Installation
 
 ### HACS (Recommended)
 
 1. Open **HACS** in Home Assistant
-2. Go to **Frontend** → Click **⋮** → **Custom repositories**
+2. Go to **Frontend** â Click **â®** â **Custom repositories**
 3. Add `https://github.com/MacSiem/ha-energy-heatmap-card` as **Lovelace** type
 4. Search for **Energy Heatmap Card** and install
 5. Refresh your browser
@@ -35,11 +35,11 @@ A custom Lovelace card for **Home Assistant** that visualizes energy consumption
 
 1. Download `ha-energy-heatmap-card.js` from the [latest release](https://github.com/MacSiem/ha-energy-heatmap-card/releases)
 2. Copy to `config/www/ha-energy-heatmap-card.js`
-3. Add resource in **Settings** → **Dashboards** → **Resources**:
+3. Add resource in **Settings** â **Dashboards** â **Resources**:
    - URL: `/local/ha-energy-heatmap-card.js`
    - Type: JavaScript Module
 
-## 🚀 Usage
+## ð Usage
 
 ### Basic
 
@@ -87,7 +87,7 @@ cards:
     days: 14
 ```
 
-## ⚙️ Configuration
+## âï¸ Configuration
 
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
@@ -98,21 +98,21 @@ cards:
 | `show_legend` | boolean | `true` | Show the color scale legend |
 | `show_labels` | boolean | `true` | Show hour and day-of-week labels |
 | `unit` | string | auto | Override unit of measurement |
-| `min_color` | string | — | Custom minimum color (hex, overrides palette) |
-| `max_color` | string | — | Custom maximum color (hex, overrides palette) |
+| `min_color` | string | â | Custom minimum color (hex, overrides palette) |
+| `max_color` | string | â | Custom maximum color (hex, overrides palette) |
 
-## 🎨 Color Palettes
+## ð¨ Color Palettes
 
 | Palette | Preview |
 |---------|---------|
-| `green` | 🟩🟩🟩🟩 (default, GitHub-style) |
-| `blue` | 🟦🟦🟦🟦 |
-| `orange` | 🟧🟧🟧🟧 |
-| `red` | 🟥🟥🟥🟥 |
-| `purple` | 🟪🟪🟪🟪 |
-| `yellow` | 🟨🟨🟨🟨 |
+| `green` | ð©ð©ð©ð© (default, GitHub-style) |
+| `blue` | ð¦ð¦ð¦ð¦ |
+| `orange` | ð§ð§ð§ð§ |
+| `red` | ð¥ð¥ð¥ð¥ |
+| `purple` | ðªðªðªðª |
+| `yellow` | ð¨ð¨ð¨ð¨ |
 
-## 🔧 Supported Entities
+## ð§ Supported Entities
 
 This card works with any **cumulative energy sensor** (device_class: `energy`), including:
 
@@ -122,7 +122,7 @@ This card works with any **cumulative energy sensor** (device_class: `energy`), 
 - Shelly, Sonoff, IKEA, Aqara energy sensors
 - Any sensor that reports cumulative `kWh`
 
-## 🤝 Contributing
+## ð¤ Contributing
 
 Contributions are welcome! Please:
 
@@ -132,14 +132,23 @@ Contributions are welcome! Please:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## ð License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License â see the [LICENSE](LICENSE) file for details.
 
-## 💡 Inspiration
+## ð¡ Inspiration
 
 This card was built out of a need to understand **when** energy is consumed, not just **how much**. Standard HA energy dashboards show totals and trends, but miss the hour-by-hour patterns that reveal standby waste, peak usage habits, and optimization opportunities.
 
 ---
 
-**Made with ❤️ for the Home Assistant community**
+**Made with â¤ï¸ for the Home Assistant community**
+
+---
+
+## Support
+
+If you find this project useful, consider supporting its development:
+
+<a href="https://buymeacoffee.com/macsiem" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="50" ></a>
+<a href="https://www.paypal.com/donate/?hosted_button_id=Y967H4PLRBN8W" target="_blank"><img src="https://img.shields.io/badge/PayPal-Donate-blue?logo=paypal&logoColor=white" alt="PayPal Donate" height="50" ></a>
